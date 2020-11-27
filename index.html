@@ -1,97 +1,116 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Responsive Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Circles UI Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-
-    <div class="container">
-        <header class="main-header clearfix">
-            <img class="logo" src="">
-            <i class="fas fa-camera"></i> <h1 class="name">Image Gallery</h1>
-        </header>
-
-        <div class="content clearfix">
-
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="images/bunny.jpg" alt="A cute bunny.">
-                    <div class="photo-overlay">
-                        <h3>Bunny</h3>
-                        <p>A cute little bunny.</p>
-                    </div>
-                </div>
-                <a href="#" class="button">download</a>
-            </div>
-
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="images/kitty.jpg" alt="A cute kitty.">
-                    <div class="photo-overlay">
-                        <h3>Kitty</h3>
-                        <p>A cute little kitty.</p>
-                    </div>
-                </div>
-                <a href="#" class="button">download</a>
-            </div>
-
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="images/fawn.jpg" alt="A cute fawn.">
-                    <div class="photo-overlay">
-                        <h3>Fawn</h3>
-                        <p>A cute little fawn.</p>
-                    </div>
-                </div>
-                <a href="#" class="button">download</a>
-            </div>
-
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="images/panda.jpeg" alt="A cute panda.">
-                    <div class="photo-overlay">
-                        <h3>Panda</h3>
-                        <p>A cute little panda.</p>
-                    </div>
-                </div>
-                <a href="#" class="button">download</a>
-            </div>
-
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="images/puppy.jpg" alt="A cute puppy.">
-                    <div class="photo-overlay">
-                        <h3>Puppy</h3>
-                        <p>A cute little puppy.</p>
-                    </div>
-                </div>
-                <a href="#" class="button">download</a>
-            </div>
-
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="images/elephant.jpg" alt="A cute elephant.">
-                    <div class="photo-overlay">
-                        <h3>Elephant</h3>
-                        <p>A cute little elephant calf.</p>
-                    </div>
-                </div>
-                <a href="#" class="button">download</a>
-            </div>
-
+<body class="container">
+    <header class="row">
+        <div class="col-3">
+            <a class="link" href="/">
+                <img class="img img-logo" alt="circles logo" src="images/logo.png">
+            </a>
         </div>
+        <div class="col-9">
+            <nav class="nav">
+                <a class="nav-link" href="#type">Typography</a>
+                <a class="nav-link" href="#buttons">Buttons</a>
+                <a class="nav-link" href="#forms">Form</a>
+                <a class="nav-link" href="#images">Images</a>
+                <a class="nav-link" href="#grid">Grid</a>
+            </nav>
+        </div>
+    </header>
 
-        <footer>@ Mary.T <a href="https://github.com/bbycobra?tab=repositories"><i class="fab fa-github"></i></a></footer> 
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <p>This is what the navigation menu looks like when the screen is at 768px or higher. When the screen is less than 768px, the menu will be displayed vertically.</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <h4 id="type" class="headline-secondary">Typography</h4>
+                <h1 class="headline-primary">Take a look at this amazing headline</h1>
+                <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>. The typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts. No jazz hands here,
+                    just the essentials to make dreams come true, with minimal clean web design. The kit comes fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using
+            italics as well from time to time</em>. Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but this amazing paragraph as well. :)</p>
+                <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes. That's right, block quotes that say, "Hey, I'm an article you want to read and nurture."</blockquote>
+            </div>
+        </div>
+        <div class="col-4">
+            <form class="form">
+                <legend id="forms" class="headline-secondary">Form Elements</legend>
+                <img class="img-avatar" src="images/avatar.png" alt="Avatar">
+                <label class="hidden" for="username">Username:</label>
+                <input class="input" type="text" id="username" placeholder="Username">
+                <label class="hidden" for="password">Password:</label>
+                <input class="input" type="password" id="password" placeholder="Password">
+                <button class="btn default" type="submit" value="Login">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <h4 id="images" class="headline-secondary">Images</h4>
+
+    <div class="row">
+        <div class="col-6">
+            <img class="img img-frame" src="images/image.png" alt="sample image">
+        </div>
+        <div class="col-6">
+            <img class="img img-avatar" src="images/avatar.png" alt="Avatar">
+        </div>
+    </div>
+
+    <h4 id="buttons" class="headline-secondary">Buttons</h4>
+
+    <div class="row">
+        <div class="col-12">
+            <button class="btn default">default</button>
+            <button class="btn success">success</button>
+            <button class="btn error">error</button>
+            <button class="btn warning">warning</button>
+            <button class="btn info">info</button>
+        </div>
+    </div>
+
+    <h4 id="grid" class="headline-secondary">Grid System</h4>
+
+    <div class="row">
+        <div class="col-12 theme">.col-12</div>
+    </div>
+    <div class="row">
+        <div class="col-6 theme">.col-6</div>
+        <div class="col-6 theme">.col-6</div>
+    </div>
+    <div class="row">
+        <div class="col-4 theme">.col-4</div>
+        <div class="col-4 theme">.col-4</div>
+        <div class="col-4 theme">.col-4</div>
+    </div>
+    <div class="row">
+        <div class="col-3 theme">.col-3</div>
+        <div class="col-3 theme">.col-3</div>
+        <div class="col-3 theme">.col-3</div>
+        <div class="col-3 theme">.col-3</div>
+    </div>
+    <div class="row">
+        <div class="col-5 theme">.col-5</div>
+        <div class="col-7 theme">.col-7</div>
+    </div>
+    <div class="row">
+        <div class="col-8 theme">.col-8</div>
+        <div class="col-4 theme">.col-4</div>
+    </div>
+    <div class="row">
+        <div class="col-7 theme centered">.centered .col-7</div>
     </div>
 
 </body>
