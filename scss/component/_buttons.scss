@@ -13,24 +13,29 @@
   text-transform: uppercase;
   border-radius: 5px;
 }
+
+.btn:hover {
+  filter: brightness(150%);
+  transition: ease-in-out .2s;
+}
   
 .default {
   background-color: $color-secondary;
 }
   
 .error {
-  background-color: #e4757a;
+  background-color: $button-color-error;
 }
   
 .info {
-  background-color: #927bc1;
+  background-color: $button-color-info;
 }
   
 .success {
-  background-color: #63cc82;
+  background-color: $button-color-sucess;
 }
   
 .warning {
-  background-color: #fd7856;
+  background-color: $button-color-warning;
 }
   
