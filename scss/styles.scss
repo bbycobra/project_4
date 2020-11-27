@@ -1,24 +1,5 @@
 //* Partial Imports//*
 
-// Base Styles //
-
-@import 'base/_index', 
-        'base/normalize',
-        'base/typography'; 
-
-// Components //
-
-@import 'component/_index',
-        'component/buttons',
-        'component/form',
-        'component/grid',
-        'component/images',
-        'component/media-queries',
-        'component/navigation';
-
-// Utilities //
-
-@import 'utilities/_index',
-        'utilities/mixins',
-        'utilities/variables';
+@import 'base/_index', 'component/_index','utilities/_index';
+      
 
