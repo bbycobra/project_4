@@ -13,29 +13,39 @@
   text-transform: uppercase;
   border-radius: 5px;
 }
-
-.btn:hover {
-  filter: brightness(150%);
-  transition: ease-in-out .2s;
-}
   
 .default {
   background-color: $color-secondary;
+  &:hover {
+    background-color: lighten($color-secondary, 15%);
+   }
 }
   
 .error {
   background-color: $button-color-error;
+  &:hover {
+    background-color: lighten($button-color-error, 15%);
+   }
 }
   
 .info {
   background-color: $button-color-info;
+  &:hover {
+    background-color: lighten($button-color-info, 15%);
+   }
 }
   
 .success {
   background-color: $button-color-sucess;
+  &:hover {
+    background-color: lighten($button-color-sucess, 15%);
+   }
 }
   
 .warning {
   background-color: $button-color-warning;
+  &:hover {
+    background-color: lighten($button-color-warning, 15%);
+   }
 }
   
